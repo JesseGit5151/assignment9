@@ -12,7 +12,6 @@ if (localStorage.getItem('employees')) {
 }
 
 // GET DOM ELEMENTS
-
 let form = document.querySelector('#addForm')
 let empTable = document.querySelector('#employees')
 let empCount = document.querySelector('#empCount')
@@ -74,11 +73,11 @@ function buildGrid(employeeArr) {
         `<tr>
             <td>${employee[0]}</td>
             <td>${employee[1]}</td>
-            <td>${employee[2]}<td>
+            <td>${employee[2]}</td>
             <td>${employee[3]}</td>
             <td>${employee[4]}</td>
             <td><button class = "btn btn-danger btn-sm delete">X</button></td>
-            `
+        </tr>`
     }
 
     // BIND THE TBODY TO THE EMPLOYEE TABLE
@@ -86,5 +85,5 @@ function buildGrid(employeeArr) {
     // UPDATE EMPLOYEE COUNT
     empCount.value =    `(${employeeArr.length})`
     // STORE THE ARRAY IN STORAGE
-    // localStorage.setItem('employees', employeeArr)
+    localStorage.setItem('employees', employeeArr)
 };
