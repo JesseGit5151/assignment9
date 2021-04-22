@@ -7,9 +7,9 @@ let employeeArr = [
 
 // CHECK TO SEE IF STORAGE OBJECT EXISTS WHEN THE PAGE LOADS
 // IF DOES, RETURN STORAGE OBJECT INTO ARRAY INSTEAD OF POPULATED ARRAY
-if (localStorage.getItem('employees')) {
-    employeeArr = localStorage.getItem('employees')
-}
+// if (localStorage.getItem('employees')) {
+//     employeeArr = localStorage.getItem('employees')
+// }
 
 // GET DOM ELEMENTS
 let form = document.querySelector('#addForm')
